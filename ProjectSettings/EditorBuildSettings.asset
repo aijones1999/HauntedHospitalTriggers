@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuTrial.unity
+    guid: 75af2305c009cad4bbba9c57161d6c66
+  - enabled: 1
+    path: Assets/Scenes/Hospital_Level.unity
+    guid: ea2834d2f0f52dc4d87c2bdda2cc63be
+  - enabled: 1
+    path: Assets/Scenes/Toon_Hospital_Level.unity
+    guid: e519dd35c80ffba43809fefd918804ad
   m_configObjects: {}
