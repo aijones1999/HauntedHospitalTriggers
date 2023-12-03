@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Toon_Hospital_Level.unity
     guid: e519dd35c80ffba43809fefd918804ad
+  - enabled: 0
+    path: Assets/Scenes/EndingScene.unity
+    guid: 2b7e89dc87e179942963ba0b1755085f
+  - enabled: 0
+    path: Assets/Scenes/EndScene.unity
+    guid: d13e7defe3e06814a91005b04a982575
   m_configObjects: {}
