@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4a308dae7ffd048a8b0eb8d5ae4a02, type: 3}
   m_Name: GreenGhost
   m_EditorClassIdentifier: 
-  characterPhoto: {fileID: 21300000, guid: d3516de1d35cc2a4fbac04cb006c9f3e, type: 3}
+  characterPhoto: {fileID: 21300000, guid: ba247f233a4c4b540b09f482ae883dce, type: 3}
   characterName: GREEN GHOST

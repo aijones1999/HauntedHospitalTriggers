@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4a308dae7ffd048a8b0eb8d5ae4a02, type: 3}
   m_Name: PinkGhost
   m_EditorClassIdentifier: 
-  characterPhoto: {fileID: 21300000, guid: 09559a967e0ed0641b92e41e070d9948, type: 3}
+  characterPhoto: {fileID: 21300000, guid: 54f56a43d88c22a41a5bfa54b7c45fd9, type: 3}
   characterName: PINK GHOST

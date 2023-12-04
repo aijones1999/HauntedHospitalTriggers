@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4a308dae7ffd048a8b0eb8d5ae4a02, type: 3}
   m_Name: BlueGhost
   m_EditorClassIdentifier: 
-  characterPhoto: {fileID: 21300000, guid: 28492007227731f499322bb3b0e61f55, type: 3}
+  characterPhoto: {fileID: 21300000, guid: 8d8d59dfa2b00ce4b96eff8946f7c2ef, type: 3}
   characterName: BLUE GHOST
