@@ -31,21 +31,17 @@ public class GhostScript : MonoBehaviour
     {
         Anim = this.GetComponent<Animator>();
         Ctrl = this.GetComponent<CharacterController>();
-        HP_text = GameObject.Find("Canvas/HP").GetComponent<Text>();
-        HP_text.text = "HP " + HP.ToString();
     }
 
     void Update()
     {
         STATUS();
         GRAVITY();
-        Respawn();
         // this character status
         if(!PlayerStatus.ContainsValue( true ))
         {
             MOVE();
-            PlayerAttack();
-            Damage();
+            PlayerAttack();        
         }
         else if(PlayerStatus.ContainsValue( true ))
         {
@@ -277,43 +273,6 @@ public class GhostScript : MonoBehaviour
             }
         }
     }
-    //---------------------------------------------------------------------
-    // damage
-    //---------------------------------------------------------------------
-    private void Damage ()
-    {
-        // Damaged by outside field.
-        if(Input.GetKeyUp(KeyCode.S))
-        {
-            Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
-            HP--;
-            HP_text.text = "HP " + HP.ToString();
-        }
-    }
-    //---------------------------------------------------------------------
-    // respawn
-    //---------------------------------------------------------------------
-    private void Respawn ()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            // player HP
-            HP = maxHP;
-            
-            Ctrl.enabled = false;
-            this.transform.position = Vector3.zero; // player position
-            this.transform.rotation = Quaternion.Euler(Vector3.zero); // player facing
-            Ctrl.enabled = true;
-            
-            // reset Dissolve
-            Dissolve_value = 1;
-            for(int i = 0; i < MeshR.Length; i++)
-            {
-                MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
-            }
-            // reset animation
-            Anim.CrossFade(IdleState, 0.1f, 0, 0);
-        }
-    }
+   
 }
 }
